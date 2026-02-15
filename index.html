@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فصل ۱۲: بیماری‌های هموستاتیک و خونریزی‌دهنده</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .gradient-header {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .exam-tip {
+            background-color: #fef2f2;
+            border-right: 4px solid #ef4444;
+            color: #991b1b;
+        }
+        .diagnosis-box {
+            background-color: #eff6ff;
+            border-right: 4px solid #3b82f6;
+            color: #1e40af;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #111827;
+            font-weight: 800;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            width: 60%;
+            height: 4px;
+            background-color: #dc2626;
+            border-radius: 2px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .comparison-table th {
+            background-color: #dc2626;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .comparison-table td {
+            padding: 10px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: center;
+            font-size: 13px;
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-right: 4px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .treatment-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-right: 4px solid #10b981;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body class="pb-12">
+
+    <!-- Header -->
+    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">فصل ۱۲: بیماری‌های هموستاتیک و خونریزی‌دهنده</h1>
+                <p class="text-red-100 text-sm mt-1">خلاصه جامع هماتولوژی (صفحات ۲۰۳-۲۲۸)</p>
+            </div>
+            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
+                ویژه دانشجویان پزشکی
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+
+        <!-- Navigation -->
+        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+            <a href="#thrombocytopenia" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">ترومبوسیتوپنی</a>
+            <a href="#itp" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">ITP</a>
+            <a href="#ttp" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">TTP</a>
+            <a href="#dic" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">DIC</a>
+            <a href="#pregnancy" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">ترومبوسیتوپنی حاملگی</a>
+            <a href="#antiplatelet" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">داروهای ضدپالکت</a>
+            <a href="#platelet-dysfunction" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">اختلال عملکرد پالکت</a>
+            <a href="#vwd" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">فون ویلبراند</a>
+            <a href="#hemophilia" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">هموفیلی</a>
+            <a href="#factor-deficiency" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">کمبود فاکتورها</a>
+            <a href="#acquired-vwd" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">فون ویلبراند اکتسابی</a>
+        </nav>
+
+        <!-- Section 1: خونریزی ناشی از ترومبوسیتوپنی -->
+        <section id="thrombocytopenia" class="card p-6">
+            <h2 class="section-title text-xl">۱. خونریزی ناشی از ترومبوسیتوپنی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                    <h3 class="font-bold text-red-800 mb-3">نکات کلیدی</h3>
+                    <div class="space-y-2 text-sm text-red-900">
+                        <div class="flex items-start">
+                            <span class="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۱</span>
+                            <span>در ترومبوسیتوپنی، خونریزی تا زمانی که تعداد پالکت به کمتر از <strong>۲۰,۰۰۰</strong> نرسیده باشد، رخ نمی‌دهد؛ مگر این که اختلال عملکرد پالکتی به علت سندرم میلودیسپلاستیک، مصرف آسپیرین یا <bdi dir="ltr">NSAID</bdi> وجود داشته باشد.</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۲</span>
+                            <span>در هنگام ترومی یا جراحی، پالکت کمتر از <strong>۱۰۰,۰۰۰</strong> در میکرولیتر ممکن است مشکل‌ساز باشد.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3 class="font-bold text-gray-800 mb-2">
+                        <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        نکته بسیار مهم
+                    </h3>
+                    <p class="text-sm">
+                        ترومبوسیتوپنی خفیف (۵۰,۰۰۰-۱۵۰,۰۰۰) معمولاً موجب خونریزی نمی‌شود و نیاز به درمان ندارد؛ اما باید علت زمینه‌ای آن بررسی شود.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: ITP -->
+        <section id="itp" class="card p-6 border-t-4 border-indigo-500">
+            <h2 class="section-title text-xl text-indigo-700">۲. پورپورای ترومبوسیتوپنیک ایمنی (<bdi dir="ltr">ITP</bdi>)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- اتیولوژی -->
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-indigo-800 mb-2">اتیولوژی</h3>
+                    <p class="text-sm text-indigo-900 mb-2">
+                        <bdi dir="ltr">ITP</bdi> می‌تواند اولیه یا ثانویه به بیماری‌های زیر باشد:
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-indigo-900 pr-4 space-y-1">
+                        <li>اتوایمیون (مانند لوپوس)</li>
+                        <li>بدخیمی‌های خونی (به خصوص <bdi dir="ltr">CLL</bdi>)</li>
+                        <li>عفونت (عمدتاً ویروس‌ها)</li>
+                    </ul>
+                    <div class="bg-indigo-100 p-2 rounded mt-2 text-xs">
+                        <strong>نکته:</strong> در کودکان در بیشتر از ۸۰٪ موارد <bdi dir="ltr">ITP</bdi> خودمحدودشونده بوده و بدون درمان بهبود می‌یابد. اما در بالغین سیر مزمن و عودکننده دارد.
+                    </div>
+                </div>
+
+                <!-- تظاهرات بالینی -->
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                    <h3 class="font-bold text-purple-800 mb-2">تظاهرات بالینی</h3>
+                    <ul class="text-sm text-purple-900 space-y-2 pr-4 list-disc list-inside">
+                        <li>پتشی و خونریزی جلدی-مخاطی: تظاهرات شایع در کودکان و بالغین</li>
+                        <li>تاول‌های خونی در دهان (پورپورای مرطوب): با خطر خونریزی‌های تهدیدکننده حیات مانند خونریزی <bdi dir="ltr">CNS</bdi> همراه بوده و نیاز به مداخله فوری دارند</li>
+                        <li><strong>در <bdi dir="ltr">ITP</bdi> اسپلنومگالی و لنفادنوپاتی وجود ندارد</strong></li>
+                    </ul>
+                </div>
+
+                <!-- یافته‌های آزمایشگاهی -->
+                <div class="diagnosis-box p-4 rounded-lg">
+                    <h3 class="font-bold mb-3">یافته‌های آزمایشگاهی</h3>
+                    
+                    <div class="space-y-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2"><bdi dir="ltr">CBC</bdi></h4>
+                            <p class="text-xs">تعداد پالکت‌ها متغیر بوده اما ممکن است بسیار کم باشد. در اغلب بیماران تعداد پالکت‌ها به کمتر از ۱۰,۰۰۰ می‌رسد و در برخی موارد ممکن است در حد غیرقابل تشخیص باشد. حجم متوسط پالکتی (<bdi dir="ltr">MPV</bdi>) افزایش می‌یابد.</p>
+                        </div>
+                        
+                        <div class="exam-tip p-3 rounded">
+                            <strong>نکته بسیار مهم:</strong> طبیعی بودن سایر رده‌های خونی، یافته کاراکتریستیک در <bdi dir="ltr">ITP</bdi> است. تنها در ۲ مورد زیر ممکن است سایر رده‌های خونی درگیر شده باشند:
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>بیمارانی که دچار خونریزی هستند، ممکن است به علت از دست دادن خون آنمی داشته باشند</li>
+                                <li><strong>سندرم <bdi dir="ltr">Evans</bdi>:</strong> گاهی <bdi dir="ltr">ITP</bdi> همراه با آنمی همولیتیک اتوایمیون (<bdi dir="ltr">AIHA</bdi>) روی می‌دهد. تست کومبس مستقیم در این بیماران مثبت است و پاسخ ضعیفی به درمان می‌دهد</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">بررسی الم خون محیطی</h4>
+                            <p class="text-xs">در برخورد با هر نوع ترومبوسیتوپنی، اولین اقدام بررسی الم خون محیطی است. در <bdi dir="ltr">ITP</bdi>، پالکت‌ها کاهش یافته و همچنین پالکت‌های بزرگ (<bdi dir="ltr">Giant</bdi>) دیده می‌شوند.</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">بیوپسی مغز استخوان</h4>
+                            <p class="text-xs">در اغلب موارد الزم نیست. بیوپسی مغز استخوان در موارد مشکوک کمک‌کننده است. افزایش مگاکاریوسیت‌ها در پاسخ به تخریب محیطی پالکت دیده می‌شود.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 p-3 rounded mt-3 text-xs">
+                        <strong>توجه:</strong> به استثناء سندرم <bdi dir="ltr">Evans</bdi> که با تست کومبس مستقیم تشخیص داده می‌شود، هیچ تست تشخیصی قطعی برای <bdi dir="ltr">ITP</bdi> وجود ندارد و تشخیص آن باید با <bdi dir="ltr">Rule out</bdi> سایر علل داده می‌شود. پاسخ مناسب به درمان در اغلب موارد تشخیص <bdi dir="ltr">ITP</bdi> را مسجل می‌کند.
+                    </div>
+
+                    <div class="highlight-box mt-3">
+                        <strong>نکته بسیار مهم:</strong> از آنجا که <bdi dir="ltr">ITP</bdi> می‌تواند ثانویه به <bdi dir="ltr">HIV</bdi>، هپاتیت یا لوپوس باشد، بیماران باید از نظر این بیماری‌ها نیز بررسی و در صورت نیاز، درمان شوند؛ چرا که درمان بیماری زمینه‌ای به کنترل <bdi dir="ltr">ITP</bdi> کمک می‌کند.
+                    </div>
+                </div>
+
+                <!-- درمان -->
+                <div class="treatment-box">
+                    <h3 class="font-bold text-green-800 mb-3">درمان <bdi dir="ltr">ITP</bdi></h3>
+                    
+                    <div class="space-y-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">۱. کورتیکواستروئیدها (خط اول درمان)</h4>
+                            <p class="text-xs mb-2">در بیمارانی که تعداد پالکت‌ها به‌طور پایدار بیشتر از ۲۰ تا ۵۰ هزار در میکرولیتر است، درمان الزم نیست.</p>
+                            <p class="text-xs">
+                                <strong>پالس دگزامتازون:</strong> ۴۰ میلی‌گرم به مدت ۴ روز متوالی و تکرار آن در سیکل‌های ماهانه نسبت به تجویز طوالنی‌مدت پردنیزون موجب پاسخ درمانی سریع‌تر و کامل‌تری می‌شود و با عوارض (افزایش وزن، عفونت و استئوپروز) کمتری همراه است، اما خطر عود بیشتر است.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">۲. <bdi dir="ltr">IVIG</bdi> (خط اول درمان)</h4>
+                            <p class="text-xs">
+                                با دوز ۱ گرم/کیلوگرم در روز به مدت ۱ یا ۲ روز یا ۴۰۰ میلی‌گرم/کیلوگرم در روز به مدت ۵ روز به عنوان خط اول درمان با یا بدون کورتیکواستروئیدها قابل تجویز است. میزان پاسخ به <bdi dir="ltr">IVIG</bdi> مشابه کورتیکواستروئید است.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">۳. اسپلنکتومی (خط دوم درمان)</h4>
+                            <p class="text-xs">
+                                در مورد خط دوم درمان <bdi dir="ltr">ITP</bdi> اختلاف نظر وجود دارد. میزان پاسخ به درمان در اسپلنکتومی تقریباً ۵۰٪ است، اما اغلب بیماران روش‌های غیرتهاجمی را ترجیح می‌دهند. در صورت عود پس از اسپلنکتومی باید به دنبال طحال فرعی باشیم.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">۴. ریتوکسیماب</h4>
+                            <p class="text-xs">
+                                یک آنتی‌بادی منوکلونال کایمریک علیه <bdi dir="ltr">CD20</bdi> بوده که تولید اتوآنتی‌بادی‌ها را کاهش می‌دهد. این دارو به صورت داخل وریدی و هفتگی به مدت ۴ هفته تجویز می‌شود.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">۵. آگونیست‌های ترومبوپویتین</h4>
+                            <p class="text-xs">
+                                این داروهای جدید اثربخشی بسیار زیادی دارند:
+                            </p>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li><bdi dir="ltr">Romiplostim</bdi>: به صورت داخل جلدی و هفتگی تزریق می‌شود</li>
+                                <li><bdi dir="ltr">Eltrombopag</bdi>: فرآورده خوراکی است که در درمان <bdi dir="ltr">ITP</bdi> کاربرد دارد</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">۶. ایمنوگلوبولین <bdi dir="ltr">Anti-Rh(D)</bdi> (روگام)</h4>
+                            <div class="exam-tip p-2 rounded text-xs mb-2">
+                                <strong>نکته ۱۰۰٪ امتحانی:</strong> روگام با اشغال کردن جایگاه‌های رسپتور <bdi dir="ltr">Fc</bdi> در ماکروفاژهای طحالی از تخریب پالکت‌ها جلوگیری می‌کند.
+                            </div>
+                            <p class="text-xs mb-2"><strong>روگام تنها در بیمارانی قابل استفاده است که هر ۳ شرط زیر را داشته باشند:</strong></p>
+                            <ul class="text-xs pr-4 space-y-1 list-disc list-inside">
+                                <li>گروه خونی <bdi dir="ltr">Rh (D)</bdi> مثبت داشته باشند</li>
+                                <li>طحال داشته باشند</li>
+                                <li>مبتلا به آنمی همولیتیک همزمان نباشند</li>
+                            </ul>
+                            <div class="bg-red-100 p-2 rounded mt-2 text-xs">
+                                <strong>یادآوری:</strong> روگام در بیمارانی که اسپلنکتومی گردیده‌اند، بی‌تأثیر است و برای تزریق روگام بیمار باید طحال داشته باشد.
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">۷. تزریق پالکت</h4>
+                            <p class="text-xs">
+                                با این که پالکت‌های تزریق شده نیز به همراه پالکت‌های خود بیمار در طحال تخریب می‌شوند، اما در بیمارانی که دچار خونریزی هستند، تزریق پالکت اندیکاسیون دارد و باید تا زمان قطع خونریزی ادامه یابد.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: TTP -->
+        <section id="ttp" class="card p-6 border-t-4 border-purple-500">
+            <h2 class="section-title text-xl text-purple-700">۳. پورپورای ترومبوسیتوپنیک ترومبوتیک (<bdi dir="ltr">TTP</bdi>)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- تعریف -->
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-purple-800 mb-2">تعریف و پاتوفیزیولوژی</h3>
+                    <p class="text-sm text-purple-900">
+                        <bdi dir="ltr">TTP</bdi> یک سندرم میکروآنژیوپاتیک ترومبوتیک است که با ترومبوسیتوپنی، آنمی همولیتیک میکروآنژیوپاتیک و علائم نورولوژیک مشخص می‌شود.
+                    </p>
+                </div>
+
+                <!-- پنتاد کلاسیک -->
+                <div class="highlight-box">
+                    <h3 class="font-bold mb-2">پنتاد کلاسیک <bdi dir="ltr">TTP</bdi></h3>
+                    <div class="grid md:grid-cols-2 gap-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>۱. ترومبوسیتوپنی</strong>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۲. آنمی همولیتیک میکروآنژیوپاتیک</strong>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۳. علائم نورولوژیک</strong>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۴. نارسایی کلیه</strong>
+                        </div>
+                        <div class="bg-white p-3 rounded col-span-2 text-center">
+                            <strong>۵. تب</strong>
+                        </div>
+                    </div>
+                    <div class="bg-yellow-100 p-2 rounded mt-2 text-xs">
+                        <strong>نکته:</strong> امروزه برای تشخیص <bdi dir="ltr">TTP</bdi> لازم نیست که تمام ۵ عنصر پنتاد کلاسیک وجود داشته باشد.
+                    </div>
+                </div>
+
+                <!-- یافته‌های آزمایشگاهی -->
+                <div class="diagnosis-box p-4 rounded-lg">
+                    <h3 class="font-bold mb-3">یافته‌های آزمایشگاهی</h3>
+                    <ul class="text-sm space-y-2 pr-4 list-disc list-inside">
+                        <li>ترومبوسیتوپنی شدید</li>
+                        <li>آنمی همولیتیک با افزایش <bdi dir="ltr">LDH</bdi> و بیلی‌روبین غیرمستقیم</li>
+                        <li>شیستوسیت‌ها (سلول‌های قرمز شکسته) در الم خون محیطی</li>
+                        <li>افزایش رتیکولوسیت</li>
+                        <li>تست کومبس منفی (تمایز با آنمی همولیتیک اتوایمیون)</li>
+                        <li><bdi dir="ltr">PT</bdi> و <bdi dir="ltr">PTT</bdi> طبیعی (تمایز با <bdi dir="ltr">DIC</bdi>)</li>
+                    </ul>
+                </div>
+
+                <!-- درمان -->
+                <div class="treatment-box">
+                    <h3 class="font-bold text-green-800 mb-3">درمان</h3>
+                    <div class="exam-tip p-3 rounded text-sm mb-3">
+                        <strong>نکته ۱۰۰٪ امتحانی:</strong> پالسمافرز سنگ‌بنای درمان <bdi dir="ltr">TTP</bdi> است و باید در اسرع وقت شروع شود.
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>۱. پالسمافرز:</strong> باید روزانه انجام شود تا زمانی که پالکت‌ها طبیعی شوند و شواهد همولیز از بین برود
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۲. کورتیکواستروئید:</strong> معمولاً همراه با پالسمافرز تجویز می‌شود
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۳. ریتوکسیماب:</strong> در موارد مقاوم یا عودکننده
+                        </div>
+                        <div class="bg-red-100 p-3 rounded border border-red-300">
+                            <strong>⚠️ هشدار:</strong> تزریق پالکت در <bdi dir="ltr">TTP</bdi> ممنوع است و می‌تواند موجب تشدید ترومبوز شود.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: DIC -->
+        <section id="dic" class="card p-6 border-t-4 border-orange-500">
+            <h2 class="section-title text-xl text-orange-700">۴. کواگولوپاتی مصرفی منتشر (<bdi dir="ltr">DIC</bdi>)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- تعریف -->
+                <div class="bg-orange-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-orange-800 mb-2">تعریف</h3>
+                    <p class="text-sm text-orange-900">
+                        <bdi dir="ltr">DIC</bdi> یک سندرم است که با فعال‌سازی سیستماتیک کواگولاسیون، تشکیل میکروترومبوز گسترده و مصرف فاکتورهای انعقادی و پالکت‌ها مشخص می‌شود.
+                    </p>
+                </div>
+
+                <!-- علل -->
+                <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                    <h3 class="font-bold text-red-800 mb-2">علل شایع</h3>
+                    <div class="grid md:grid-cols-2 gap-3 text-sm">
+                        <div>
+                            <h4 class="font-semibold text-xs mb-1">عفونت‌ها:</h4>
+                            <ul class="text-xs pr-4 list-disc list-inside">
+                                <li>سپسیس (شایع‌ترین)</li>
+                                <li>عفونت‌های باکتریال شدید</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-xs mb-1">عوارض مامایی:</h4>
+                            <ul class="text-xs pr-4 list-disc list-inside">
+                                <li>آمبولی مایع آمنیوتیک</li>
+                                <li>جفت سررسیده</li>
+                                <li>اکلامپسی</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-xs mb-1">بدخیمی‌ها:</h4>
+                            <ul class="text-xs pr-4 list-disc list-inside">
+                                <li>لوسمی پرومیلوسیتیک حاد</li>
+                                <li>تومورهای جامد</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-xs mb-1">سایر:</h4>
+                            <ul class="text-xs pr-4 list-disc list-inside">
+                                <li>ترومای شدید</li>
+                                <li>سوختگی گسترده</li>
+                                <li>نیش مار</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- یافته‌های آزمایشگاهی -->
+                <div class="diagnosis-box p-4 rounded-lg">
+                    <h3 class="font-bold mb-3">یافته‌های آزمایشگاهی</h3>
+                    <div class="grid md:grid-cols-2 gap-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>ترومبوسیتوپنی</strong>
+                            <p class="text-xs mt-1">به علت مصرف پالکت‌ها</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>طوالنی شدن <bdi dir="ltr">PT</bdi> و <bdi dir="ltr">PTT</bdi></strong>
+                            <p class="text-xs mt-1">به علت مصرف فاکتورهای انعقادی</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>کاهش فیبرینوژن</strong>
+                            <p class="text-xs mt-1">کمتر از ۱۰۰ میلی‌گرم/دسی‌لیتر</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>افزایش <bdi dir="ltr">D-dimer</bdi> و <bdi dir="ltr">FDP</bdi></strong>
+                            <p class="text-xs mt-1">نشان‌دهنده فیبرینولیز</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>شیستوسیت در الم</strong>
+                            <p class="text-xs mt-1">سلول‌های قرمز شکسته</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>آنمی همولیتیک</strong>
+                            <p class="text-xs mt-1">افزایش <bdi dir="ltr">LDH</bdi> و بیلی‌روبین</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- درمان -->
+                <div class="treatment-box">
+                    <h3 class="font-bold text-green-800 mb-3">درمان</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="exam-tip p-3 rounded">
+                            <strong>مهم‌ترین اقدام:</strong> درمان بیماری زمینه‌ای (مثل آنتی‌بیوتیک برای سپسیس)
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۱. درمان هموستاتیک کمکی:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>تزریق پالکت (در صورت خونریزی فعال یا قبل از پروسیجر تهاجمی)</li>
+                                <li><bdi dir="ltr">FFP</bdi>: برای تأمین فاکتورهای انعقادی</li>
+                                <li>کرایوپرسیپیتات: برای تأمین فیبرینوژن (اگر فیبرینوژن < ۱۰۰)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-red-100 p-3 rounded border border-red-300">
+                            <strong>⚠️ توجه:</strong> در موارد ترومبوتیک <bdi dir="ltr">DIC</bdi>، ممکن است از هپارین استفاده شود، اما در موارد خونریزنده منع مصرف دارد.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: ترومبوسیتوپنی در حاملگی -->
+        <section id="pregnancy" class="card p-6 border-t-4 border-pink-500">
+            <h2 class="section-title text-xl text-pink-700">۵. ترومبوسیتوپنی در حاملگی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- ترومبوسیتوپنی فیزیولوژیک -->
+                <div class="bg-pink-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-pink-800 mb-2">ترومبوسیتوپنی فیزیولوژیک حاملگی</h3>
+                    <p class="text-sm text-pink-900 mb-2">
+                        ترومبوسیتوپنی خفیف (۱۰۰-۱۵۰ هزار) در زنان باردار ناشی از رقیق‌شدن خون و فیزیولوژی طبیعی حاملگی است و موجب عوارض مادری یا جنینی نمی‌شود.
+                    </p>
+                    <div class="bg-pink-100 p-2 rounded text-xs">
+                        <strong>نکته:</strong> در عوض، علل اتوایمیون تخریب پالکت و فشار خون ناشی از حاملگی (<bdi dir="ltr">PIH</bdi>) می‌توانند باعث کاهش تعداد پالکت به کمتر از ۱۰۰,۰۰۰ و بروز عوارض شوند.
+                    </div>
+                </div>
+
+                <!-- سندرم HELLP -->
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+                    <h3 class="font-bold text-purple-800 mb-3">سندرم <bdi dir="ltr">HELLP</bdi></h3>
+                    
+                    <div class="bg-white p-3 rounded mb-3">
+                        <h4 class="font-semibold text-sm mb-2">معنی <bdi dir="ltr">HELLP</bdi></h4>
+                        <ul class="text-xs space-y-1">
+                            <li><strong><bdi dir="ltr">H</bdi></strong> = Hemolysis (همولیز)</li>
+                            <li><strong><bdi dir="ltr">EL</bdi></strong> = Elevated Liver enzymes (افزایش آنزیم‌های کبدی)</li>
+                            <li><strong><bdi dir="ltr">LP</bdi></strong> = Low Platelet count (تعداد پایین پالکت)</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">یافته‌های بالینی</h4>
+                            <p class="text-xs">در حاملگی با همولیز، افزایش آنزیم‌های کبدی و تعداد پائین پالکت گاهی در همراهی با هیپرتانسیون تظاهر می‌یابد.</p>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded">
+                            <strong>نکته مهم:</strong> سندرم <bdi dir="ltr">HELLP</bdi> نیز موجب آنمی همولیتیک میکروآنژیوپاتیک می‌شود. در الم خون محیطی بیمار شیستوسیت دیده می‌شود.
+                        </div>
+
+                        <div class="treatment-box p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">درمان</h4>
+                            <p class="text-xs mb-2">
+                                <strong>مهمترین درمان در سندرم <bdi dir="ltr">HELLP</bdi>: ختم حاملگی است.</strong>
+                            </p>
+                            <p class="text-xs">
+                                ترومبوسیتوپنی همراه با فشارخون ناشی از حاملگی یا <bdi dir="ltr">HELLP</bdi> با زایمان اصلاح می‌شود. اگر ترومبوسیتوپنی بعد از زایمان بهبود نیابد، <bdi dir="ltr">IVIG</bdi> یا پالسمافرز اندیکاسیون می‌یابد.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: داروهای ضدپالکتی -->
+        <section id="antiplatelet" class="card p-6 border-t-4 border-blue-500">
+            <h2 class="section-title text-xl text-blue-700">۶. آسپیرین و داروهای ضدپالکتی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <!-- آسپیرین -->
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-blue-800 mb-2">آسپیرین</h3>
+                        <p class="text-sm text-blue-900">
+                            به شکل <strong>برگشت‌ناپذیر</strong> موجب مهار متابولیسم طبیعی اسید آراشیدونیک می‌شود. تمام پالکت‌های در معرض آسپیرین به صورت برگشت‌ناپذیر تحت تاثیر قرار گرفته و حتی بعد از قطع آسپیرین، این پالکت‌ها به تحریک پاسخ نمی‌دهند.
+                        </p>
+                    </div>
+
+                    <!-- NSAIDs -->
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-green-800 mb-2">داروهای <bdi dir="ltr">NSAID</bdi></h3>
+                        <p class="text-sm text-green-900">
+                            مثل ایندومتاسین به شکل <strong>برگشت‌پذیر</strong> سیکلواکسیژناز (<bdi dir="ltr">COX</bdi>) را مهار می‌نمایند، لذا عملکرد پالکت‌ها، بعد از قطع دارو باز می‌گردد.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                    <h3 class="font-bold text-purple-800 mb-2">اثرات آسپیرین و <bdi dir="ltr">NSAID</bdi></h3>
+                    <p class="text-sm text-purple-900">
+                        اثرات آسپیرین محدود به <bdi dir="ltr">COX-1</bdi> است ولی <bdi dir="ltr">NSAID</bdi>ها گرایش متفاوتی برای <bdi dir="ltr">COX-1</bdi> و <bdi dir="ltr">COX-2</bdi> دارند:
+                    </p>
+                    <ul class="text-sm mt-2 space-y-1 pr-4 list-disc list-inside">
+                        <li><bdi dir="ltr">NSAID</bdi>های غیرانتخابی بیشتر با مهار <bdi dir="ltr">COX-1</bdi> موجب خونریزی می‌شوند</li>
+                        <li><bdi dir="ltr">NSAID</bdi>های انتخابی با مهار <bdi dir="ltr">COX-2</bdi> شانس حوادث قلبی-عروقی را بالا می‌برند</li>
+                    </ul>
+                </div>
+
+                <div class="bg-orange-50 p-4 rounded-lg border border-orange-100">
+                    <h3 class="font-bold text-orange-800 mb-2">آنتاگونیست‌های رسپتور <bdi dir="ltr">P2Y12</bdi></h3>
+                    <p class="text-sm text-orange-900 mb-2">
+                        کلوپیدوگرل و پراسوگرل مستقل از <bdi dir="ltr">COX-1</bdi> و <bdi dir="ltr">COX-2</bdi> عمل نموده و آنتاگونیست رسپتور <bdi dir="ltr">P2Y12</bdi> هستند. این داروها به عنوان درمان ضدانعقادی کمکی در افرادی به کار برده می‌شوند که در ریسک ترومبوز همراه با بیماری شریان کرونری و <bdi dir="ltr">Stroke</bdi> قرار دارند.
+                    </p>
+                </div>
+
+                <!-- درمان خونریزی -->
+                <div class="treatment-box">
+                    <h3 class="font-bold text-green-800 mb-3">درمان خونریزی ناشی از داروهای ضدپالکتی</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="exam-tip p-3 rounded">
+                            <strong>۱. قطع دارو:</strong> بدون در نظر گرفتن داروی مصرفی، قطع داروی ضدپالکت اولین اقدام در بیمارانی است که حین درمان دارویی دچار خونریزی متوسط تا شدید شده‌اند.
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۲. تزریق <bdi dir="ltr">DDAVP</bdi> (دسموپرسین):</strong> عالوه بر قطع دارو، ممکن است کمک‌کننده باشد، اما در مطالعات بالینی نتایج متناقضی گزارش شده است.
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۳. تزریق پالکت:</strong> گاهی تزریق پالکت الزم است؛ معمولاً تزریق ۴ تا ۶ واحد پالکت از دهنده تصادفی (<bdi dir="ltr">RD</bdi>)، موجب افزایش ۱۰٪ پالکت‌ها شده و هموستاز اولیه باز می‌گردد.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: اختلال عملکرد پالکت -->
+        <section id="platelet-dysfunction" class="card p-6 border-t-4 border-teal-500">
+            <h2 class="section-title text-xl text-teal-700">۷. اختلالات عملکرد پالکت</h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- اختلال عملکرد پالکت در اورمی -->
+                <div class="bg-teal-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-teal-800 mb-3">اختلال عملکرد پالکت در اورمی</h3>
+                    
+                    <div class="diagnosis-box p-3 rounded mb-3">
+                        <h4 class="font-semibold text-sm mb-2">تظاهرات بالینی</h4>
+                        <p class="text-xs">
+                            وضعیت اورمیک، فرد را در معرض خطر خونریزی ناشی از اختلال عملکرد پالکت قرار می‌دهد. چون هیچ تست اختصاصی برای این وضعیت وجود ندارد؛ در مبتلایان به نارسایی حاد یا مزمن کلیه که با اختلالات خونریزی دهنده پالکتی مراجعه می‌کنند، باید این وضعیت در نظر گرفته شود.
+                        </p>
+                    </div>
+
+                    <div class="treatment-box">
+                        <h4 class="font-semibold text-green-800 mb-2">درمان</h4>
+                        <div class="space-y-2 text-xs">
+                            <div class="bg-white p-2 rounded">
+                                <strong>۱. <bdi dir="ltr">DDAVP</bdi> و کرایوپرسیپیتات (کوتاه‌مدت):</strong> هر دو دارو موجب افزایش فاکتور فون ویلبراند می‌شوند.
+                            </div>
+                            <div class="bg-white p-2 rounded">
+                                <strong>۲. تزریق <bdi dir="ltr">RBC</bdi>:</strong> با افزایش حجم و راندن پالکت‌ها به سمت دیواره عروق ممکن است کمک‌کننده باشد.
+                            </div>
+                            <div class="bg-white p-2 rounded">
+                                <strong>۳. استروژن کنژوگه (طوالنی‌مدت):</strong> در درمان طوالنی‌مدت مفید است.
+                            </div>
+                            <div class="bg-white p-2 rounded">
+                                <strong>۴. تزریق پالکت:</strong> در مبتلایان به خونریزی کشنده و نارسایی حاد کلیه مفید است، لیکن اثر آن کوتاه مدت می‌باشد چرا که پالکت‌های تزریقی به سرعت دچار اختلال اورمیک می‌شوند.
+                            </div>
+                            <div class="bg-white p-2 rounded">
+                                <strong>۵. درمان جایگزینی کلیه:</strong> دیالیز یا پیوند کلیه ممکن است الزم باشد.
+                            </div>
+                        </div>
+                        <div class="exam-tip p-2 rounded mt-2 text-xs">
+                            <strong>نکته بسیار مهم:</strong> در بیشتر موارد خونریزی اورمیک، تزریق پالکت نباید به عنوان خط اول درمان در نظر گرفته شود.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- سندرم برنارد-سولیر -->
+                <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-100">
+                    <h3 class="font-bold text-indigo-800 mb-2">سندرم برنارد-سولیر</h3>
+                    
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-1">اتیولوژی</h4>
+                            <p class="text-xs">
+                                به علت کاهش بیان <bdi dir="ltr">GPIb</bdi> در سطح پالکت ایجاد می‌شود. <bdi dir="ltr">GPIb</bdi> رسپتور اولیه فاکتور فون ویلبراند می‌باشد.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-1">تظاهرات بالینی</h4>
+                            <p class="text-xs">
+                                ترومبوسیتوپنی خفیف، افزایش <bdi dir="ltr">BT</bdi>، پالکت‌های بزرگ (<bdi dir="ltr">Giant</bdi>) و علائم خفیف تا متوسط خونریزی. تشخیص معمولاً در دوران کودکی داده می‌شود ولی در برخی از بیماران در بزرگسالی علامتدار می‌شود.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-1">یافته‌های آزمایشگاهی</h4>
+                            <p class="text-xs">
+                                علی‌رغم طبیعی بودن سطح و فانکشن فاکتور فون ویلبراند، در این بیماران عدم تجمع پالکت در پاسخ به ریستوستین وجود دارد.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ترومبوآستنی گالنزمن -->
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                    <h3 class="font-bold text-purple-800 mb-2">ترومبوآستنی گالنزمن</h3>
+                    
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-1">اتیولوژی</h4>
+                            <p class="text-xs">
+                                به علت نقص در <bdi dir="ltr">GPIIb/IIIa</bdi> (رسپتور فیبرینوژن) ایجاد می‌شود.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-1">تظاهرات بالینی</h4>
+                            <p class="text-xs">
+                                تعداد پالکت طبیعی، افزایش <bdi dir="ltr">BT</bdi> و علائم خونریزی متغیر از خفیف تا شدید.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-1">یافته‌های آزمایشگاهی</h4>
+                            <p class="text-xs">
+                                عدم تجمع پالکت در پاسخ به <bdi dir="ltr">ADP</bdi>، کلاژن و تروم بین، اما تجمع پالکت در پاسخ به ریستوستین طبیعی است.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: بیماری فون ویلبراند -->
+        <section id="vwd" class="card p-6 border-t-4 border-rose-500">
+            <h2 class="section-title text-xl text-rose-700">۸. بیماری فون ویلبراند</h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- مقدمه -->
+                <div class="bg-rose-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-rose-800 mb-2">مقدمه</h3>
+                    <p class="text-sm text-rose-900">
+                        بیماری فون ویلبراند شایع‌ترین اختلال انعقادی ارثی است که با کمبود یا نقص عملکردی فاکتور فون ویلبراند مشخص می‌شود.
+                    </p>
+                </div>
+
+                <!-- نوع 1 -->
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                    <h3 class="font-bold text-blue-800 mb-3">نوع ۱ (شایع‌ترین نوع)</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-3">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">اپیدمیولوژی</h4>
+                            <p class="text-xs">شایع‌ترین نوع این بیماری است. شدت علائم متغیر بوده اما اغلب خفیف است.</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">اتیولوژی</h4>
+                            <p class="text-xs">به علت کاهش مقدار آنتی‌ژن <bdi dir="ltr">VWF</bdi> ایجاد می‌شود.</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">نحوه توارث</h4>
+                            <p class="text-xs">اتوزوم غالب</p>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded">
+                            <strong>نکته:</strong> گروه خونی <bdi dir="ltr">O</bdi> با کاهش ۲۵٪ در سطح فاکتور فون ویلبراند همراه است؛ اما معمولاً سبب افزایش خطر خونریزی نمی‌شود، زیرا با افزایش سن، ترشح <bdi dir="ltr">VWF</bdi> افزایش و کلیرانس آن کاهش می‌یابد.
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 mt-3">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">تظاهرات بالینی</h4>
+                            <ul class="text-xs pr-4 space-y-1 list-disc list-inside">
+                                <li>کمبود شدن آسان</li>
+                                <li>خونریزی‌های مخاطی از لثه و اپیستاکسی</li>
+                                <li>منوراژی</li>
+                                <li>خونریزی‌های عمقی مشابه با هموفیلی (هماتوم عضلانی، همارتروز و خونریزی <bdi dir="ltr">CNS</bdi>)</li>
+                            </ul>
+                            <div class="highlight-box mt-2 text-xs">
+                                <strong>نکته بسیار مهم (۱۰۰٪ امتحانی):</strong> یکی از تظاهرات شایع بیماری فون ویلبراند منوراژی است. در مواردی که خونریزی قاعدگی شدید بوده و یا موجب آنمی شده باشد باید همواره به بیماری فون ویلبراند مشکوک شد.
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">تشخیص</h4>
+                            <p class="text-xs mb-2">
+                                <strong>تست فون ویلبراند-ریستوستین (<bdi dir="ltr">VWF:RCo</bdi>):</strong> برای اندازه‌گیری فعالیت فاکتور فون ویلبراند به کار برده می‌شود.
+                            </p>
+                            <ul class="text-xs pr-4 space-y-1 list-disc list-inside">
+                                <li>برای تشخیص بیماری فون ویلبراند، <bdi dir="ltr">VWF:RCo</bdi> باید کمتر از ۳۰٪ باشد</li>
+                                <li>اگر این مقدار بین ۳۰ تا ۴۹٪ باشد، سطح <bdi dir="ltr">VWF</bdi> کاهش یافته اما به عنوان بیماری فون ویلبراند در نظر گرفته نمی‌شود</li>
+                            </ul>
+                            <div class="bg-yellow-100 p-2 rounded mt-2 text-xs">
+                                <strong>نکته:</strong> از آنجایی که این تست تغییرپذیری (<bdi dir="ltr">Variability</bdi>) زیادی دارد، بهتر است تست تکرار شود.
+                            </div>
+                        </div>
+
+                        <div class="highlight-box text-xs">
+                            <strong>نکته بسیار مهم:</strong> سطح فاکتور فون ویلبراند با افزایش سن، التهاب، بیماری کبدی و استروژن (<bdi dir="ltr">OCP</bdi> یا طی حاملگی) افزایش می‌یابد. بیماران مبتلا به بیماری خفیف و متوسط معمولاً در طی حاملگی دچار خونریزی نمی‌شوند؛ اما طی چند روز تا چند هفته بعد از زایمان، خطر خونریزی به میزان قبل از حاملگی بازمی‌گردد. بنابراین خونریزی‌های پس از زایمان باید به دقت بررسی شوند.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- درمان نوع 1 -->
+                <div class="treatment-box">
+                    <h3 class="font-bold text-green-800 mb-3">درمان</h3>
+                    
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2"><bdi dir="ltr">DDAVP</bdi> (دسموپرسین)</h4>
+                            <p class="text-xs mb-2">
+                                موجب افزایش تولید و آزادسازی فاکتور فون ویلبراند از سلول‌های اندوتلیال می‌شود. همچنین سطح فاکتور <bdi dir="ltr">VIII</bdi> را افزایش می‌دهد.
+                            </p>
+                            <ul class="text-xs pr-4 space-y-1 list-disc list-inside">
+                                <li>در عرض چند دقیقه پس از تجویز <bdi dir="ltr">DDAVP</bdi> وریدی یا داخل بینی سطح <bdi dir="ltr">VWF</bdi> افزایش می‌یابد</li>
+                                <li><bdi dir="ltr">DDAVP</bdi> را می‌توان با دوز ۰.۳ میکروگرم/کیلوگرم به صورت داخل وریدی (حداکثر دوز ۲۰ میکروگرم) حدود ۳۰ تا ۶۰ دقیقه قبل از جراحی تزریق کرد</li>
+                                <li><bdi dir="ltr">DDAVP</bdi> داخل بینی برای خونریزی‌های خفیف در منزل یا خونریزی قاعدگی سنگین قابل استفاده است</li>
+                            </ul>
+                            <div class="exam-tip p-2 rounded mt-2 text-xs">
+                                <strong>عارضه مهم <bdi dir="ltr">DDAVP</bdi>:</strong> هیپوناترمی
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">کنسانتره <bdi dir="ltr">VWF</bdi></h4>
+                            <p class="text-xs mb-2">در صورت عدم پاسخ یا عدم تحمل به <bdi dir="ltr">DDAVP</bdi>، از کنسانتره <bdi dir="ltr">VWF</bdi> استفاده می‌شود.</p>
+                            <ul class="text-xs pr-4 space-y-1 list-disc list-inside">
+                                <li><strong>کنسانتره <bdi dir="ltr">VWF</bdi> نوترکیب:</strong> فقط حاوی <bdi dir="ltr">VWF</bdi> است</li>
+                                <li><strong>کنسانتره <bdi dir="ltr">VWF</bdi> مشتق از پلاسما:</strong> عالوه بر <bdi dir="ltr">VWF</bdi>، حاوی فاکتور <bdi dir="ltr">VIII</bdi> نیز می‌باشد</li>
+                            </ul>
+                            <div class="highlight-box mt-2 text-xs">
+                                <strong>نکته بسیار مهم:</strong> اگر سطح پایه فاکتور فون ویلبراند صفر باشد، تجویز ۵۰ واحد/کیلوگرم کنسانتره <bdi dir="ltr">VWF</bdi> به صورت داخل وریدی سطح فاکتور را به ۱۰۰٪ می‌رساند.
+                            </div>
+                            <div class="bg-blue-100 p-2 rounded mt-2 text-xs">
+                                <strong>توجه:</strong> نیمه عمر فرآورده‌های <bdi dir="ltr">VWF</bdi> تقریباً ۱۲ ساعت بوده، لذا تجویز آنها باید هر ۱۲ تا ۲۴ ساعت تکرار شود.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- انواع 2 و 3 -->
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-200 mt-4">
+                    <h3 class="font-bold text-purple-800 mb-3">انواع دیگر بیماری فون ویلبراند</h3>
+                    
+                    <div class="space-y-3 text-sm">
+                        <div class="exam-tip p-3 rounded">
+                            <h4 class="font-semibold mb-2">نوع ۲<bdi dir="ltr">B</bdi></h4>
+                            <ul class="text-xs pr-4 space-y-1 list-disc list-inside">
+                                <li>ترومبوسیتوپنی خفیفی وجود دارد</li>
+                                <li>استفاده از <bdi dir="ltr">DDAVP</bdi> موجب تشدید ترومبوسیتوپنی می‌شود، لذا مصرف آن کنتراندیکه بوده و باید از کنسانتره <bdi dir="ltr">VWF</bdi> استفاده شود</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">نوع ۲<bdi dir="ltr">M</bdi></h4>
+                            <ul class="text-xs pr-4 space-y-1 list-disc list-inside">
+                                <li>خونریزی گوارشی شایع‌تر از سایر انواع است</li>
+                                <li>تعداد پالکت‌ها و مولتی‌مرهای <bdi dir="ltr">VWF</bdi> طبیعی است</li>
+                                <li>بعضی از بیماران به <bdi dir="ltr">DDAVP</bdi> پاسخ می‌دهند ولی اکثر آنها به کنسانتره <bdi dir="ltr">VWF</bdi> نیاز دارند</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">نوع ۲<bdi dir="ltr">N</bdi></h4>
+                            <ul class="text-xs pr-4 space-y-1 list-disc list-inside">
+                                <li>مبتلایان با تابلویی شبیه هموفیلی <bdi dir="ltr">A</bdi> (مانند همارتروز) تظاهر می‌یابند</li>
+                                <li>این بیماری برخالف هموفیلی <bdi dir="ltr">A</bdi> و <bdi dir="ltr">B</bdi> اتوزومال بوده و در مردان و زنان به یک نسبت رخ می‌دهد</li>
+                                <li>در زنانی که با علائم هموفیلی <bdi dir="ltr">A</bdi> مراجعه می‌کنند، حتماً باید بیماری فون ویلبراند نوع ۲<bdi dir="ltr">N</bdi> را در نظر داشت</li>
+                                <li>سطح فاکتور <bdi dir="ltr">VIII</bdi> کاهش یافته است، اما به تزریق فاکتور <bdi dir="ltr">VIII</bdi> پاسخ نمی‌دهد، چرا که طول عمر آن کاهش یافته است</li>
+                                <li>درمان: کنسانتره <bdi dir="ltr">VWF</bdi> با یا بدون فاکتور <bdi dir="ltr">VIII</bdi></li>
+                            </ul>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded">
+                            <h4 class="font-semibold mb-2">نوع ۳</h4>
+                            <p class="text-xs">
+                                شدیدترین نوع بوده و با فقدان کامل <bdi dir="ltr">VWF</bdi> و کاهش شدید فاکتور ۸ مشخص می‌شود. توارث اتوزومال مغلوب دارد.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- جدول مقایسه انواع -->
+                <div class="mt-4 overflow-x-auto">
+                    <h3 class="font-bold text-lg mb-3">مقایسه انواع بیماری فون ویلبراند</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>نوع</th>
+                                <th><bdi dir="ltr">VWF:Ag</bdi></th>
+                                <th><bdi dir="ltr">VWF:RCO</bdi></th>
+                                <th>فاکتور <bdi dir="ltr">VIII</bdi></th>
+                                <th><bdi dir="ltr">DDAVP</bdi></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold">Type 1</td>
+                                <td>↓</td>
+                                <td>↓</td>
+                                <td>طبیعی یا ↓</td>
+                                <td class="bg-green-100">مؤثر</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">Type 2A</td>
+                                <td>طبیعی-</td>
+                                <td>↓↓</td>
+                                <td>طبیعی یا ↓</td>
+                                <td class="bg-green-100">مؤثر</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">Type 2B</td>
+                                <td>↓ یا طبیعی</td>
+                                <td>↓↓</td>
+                                <td>طبیعی یا ↓</td>
+                                <td class="bg-red-100">منع مصرف</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">Type 2M</td>
+                                <td>↓ یا طبیعی</td>
+                                <td>↓↓</td>
+                                <td>طبیعی یا ↓</td>
+                                <td class="bg-yellow-100">متغیر</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">Type 2N</td>
+                                <td>↓ یا طبیعی</td>
+                                <td>طبیعی-</td>
+                                <td>↓↓</td>
+                                <td class="bg-red-100">بی‌اثر</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">Type 3</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>↓↓↓</td>
+                                <td class="bg-red-100">بی‌اثر</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: هموفیلی -->
+        <section id="hemophilia" class="card p-6 border-t-4 border-cyan-500">
+            <h2 class="section-title text-xl text-cyan-700">۹. هموفیلی <bdi dir="ltr">A</bdi> و <bdi dir="ltr">B</bdi></h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- تعریف -->
+                <div class="bg-cyan-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-cyan-800 mb-2">تعریف</h3>
+                    <div class="grid md:grid-cols-2 gap-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>هموفیلی <bdi dir="ltr">A</bdi>:</strong>
+                            <p class="text-xs mt-1">کمبود فاکتور <bdi dir="ltr">VIII</bdi> (شایع‌تر)</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>هموفیلی <bdi dir="ltr">B</bdi>:</strong>
+                            <p class="text-xs mt-1">کمبود فاکتور <bdi dir="ltr">IX</bdi></p>
+                        </div>
+                    </div>
+                    <div class="bg-cyan-100 p-2 rounded mt-2 text-xs">
+                        <strong>توارث:</strong> وابسته به کروموزوم <bdi dir="ltr">X</bdi> مغلوب (مردان مبتلا و زنان ناقل)
+                    </div>
+                </div>
+
+                <!-- تظاهرات بالینی -->
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                    <h3 class="font-bold text-blue-800 mb-3">تظاهرات بالینی</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>خونریزی‌های عمقی:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li><strong>همارتروز:</strong> شایع‌ترین تظاهر (زانو، آرنج، مچ پا)</li>
+                                <li>هماتوم عضلانی</li>
+                                <li>خونریزی داخل جمجمه (<bdi dir="ltr">CNS</bdi>)</li>
+                                <li>خونریزی پس از جراحی یا ترومی</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>طبقه‌بندی شدت:</strong>
+                            <ul class="text-xs pr-4 space-y-1 list-disc list-inside">
+                                <li><strong>شدید:</strong> سطح فاکتور < ۱٪ - خونریزی خودبه‌خودی</li>
+                                <li><strong>متوسط:</strong> سطح فاکتور ۱-۵٪ - خونریزی با ترومی جزئی</li>
+                                <li><strong>خفیف:</strong> سطح فاکتور > ۵٪ - خونریزی با جراحی یا ترومی شدید</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- یافته‌های آزمایشگاهی -->
+                <div class="diagnosis-box p-4 rounded-lg">
+                    <h3 class="font-bold mb-3">یافته‌های آزمایشگاهی</h3>
+                    <div class="grid md:grid-cols-2 gap-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong><bdi dir="ltr">PTT</bdi> طوالنی</strong>
+                            <p class="text-xs mt-1">به علت کمبود فاکتور <bdi dir="ltr">VIII</bdi> یا <bdi dir="ltr">IX</bdi></p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong><bdi dir="ltr">PT</bdi> و <bdi dir="ltr">TT</bdi> طبیعی</strong>
+                            <p class="text-xs mt-1">فقط <bdi dir="ltr">PTT</bdi> مختل است</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>تعداد پالکت طبیعی</strong>
+                            <p class="text-xs mt-1">پالکت‌ها تحت تأثیر نیستند</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong><bdi dir="ltr">Bleeding time</bdi> طبیعی</strong>
+                            <p class="text-xs mt-1">عملکرد پالکت سالم است</p>
+                        </div>
+                    </div>
+                    <div class="exam-tip p-3 rounded mt-3 text-xs">
+                        <strong>تشخیص افتراقی با فون ویلبراند:</strong>
+                        <ul class="pr-4 mt-1 space-y-1 list-disc list-inside">
+                            <li>در هموفیلی: <bdi dir="ltr">BT</bdi> طبیعی، توارث وابسته به <bdi dir="ltr">X</bdi></li>
+                            <li>در فون ویلبراند: <bdi dir="ltr">BT</bdi> طوالنی، توارث اتوزومال</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- درمان -->
+                <div class="treatment-box">
+                    <h3 class="font-bold text-green-800 mb-3">درمان</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">درمان جایگزینی فاکتور</h4>
+                            <ul class="text-xs space-y-1 pr-4 list-disc list-inside">
+                                <li><strong>هموفیلی <bdi dir="ltr">A</bdi>:</strong> کنسانتره فاکتور <bdi dir="ltr">VIII</bdi> نوترکیب یا مشتق از پلاسما</li>
+                                <li><strong>هموفیلی <bdi dir="ltr">B</bdi>:</strong> کنسانتره فاکتور <bdi dir="ltr">IX</bdi></li>
+                                <li><strong>هدف درمانی:</strong> رساندن سطح فاکتور به حد مورد نیاز براساس شدت خونریزی</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">سطح هدف فاکتور</h4>
+                            <ul class="text-xs space-y-1 pr-4 list-disc list-inside">
+                                <li>خونریزی جزئی: ۳۰-۵۰٪</li>
+                                <li>همارتروز یا هماتوم عضلانی: ۴۰-۶۰٪</li>
+                                <li>جراحی بزرگ یا خونریزی تهدیدکننده حیات: ۸۰-۱۰۰٪</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-sm mb-2">درمان‌های کمکی</h4>
+                            <ul class="text-xs space-y-1 pr-4 list-disc list-inside">
+                                <li><bdi dir="ltr">DDAVP</bdi>: فقط در هموفیلی <bdi dir="ltr">A</bdi> خفیف مؤثر است (افزایش موقت فاکتور <bdi dir="ltr">VIII</bdi>)</li>
+                                <li>آنتی‌فیبرینولیتیک‌ها (ترانگزامیک اسید): برای خونریزی‌های دهانی و خونریزی بعد از کشیدن دندان</li>
+                            </ul>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded">
+                            <strong>مهارکننده‌های فاکتور <bdi dir="ltr">VIII</bdi>:</strong>
+                            <p class="text-xs mt-1">در ۲۰-۳۰٪ از بیماران هموفیلی <bdi dir="ltr">A</bdi> بعد از درمان‌های مکرر، آنتی‌بادی علیه فاکتور <bdi dir="ltr">VIII</bdi> ایجاد می‌شود. در این موارد:</p>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>استفاده از دوز بالاتر فاکتور <bdi dir="ltr">VIII</bdi></li>
+                                <li>استفاده از فاکتور <bdi dir="ltr">VIIa</bdi> نوترکیب</li>
+                                <li>درمان ایمن‌تلرانس برای از بین بردن مهارکننده</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- پروفیلاکسی -->
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                    <h3 class="font-bold text-purple-800 mb-2">پروفیلاکسی</h3>
+                    <p class="text-sm text-purple-900 mb-2">
+                        در بیماران با هموفیلی شدید، تزریق منظم فاکتور (۲-۳ بار در هفته) برای پیشگیری از خونریزی‌های خودبه‌خودی و آرتروپاتی توصیه می‌شود.
+                    </p>
+                    <div class="bg-purple-100 p-2 rounded text-xs">
+                        <strong>نکته:</strong> پروفیلاکسی معمولاً از دوران کودکی شروع می‌شود و می‌تواند از بروز آرتروپاتی مزمن جلوگیری کند.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: کمبود فاکتورهای انعقادی -->
+        <section id="factor-deficiency" class="card p-6 border-t-4 border-amber-500">
+            <h2 class="section-title text-xl text-amber-700">۱۰. کمبود فاکتورهای انعقادی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- جدول اثر کمبود فاکتورها -->
+                <div class="overflow-x-auto">
+                    <h3 class="font-bold text-lg mb-3">نتایج غربالگری آزمایشگاهی در اختلالات فاکتورهای انعقادی</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>فاکتور مختل</th>
+                                <th><bdi dir="ltr">PT</bdi></th>
+                                <th><bdi dir="ltr">PTT</bdi></th>
+                                <th><bdi dir="ltr">TT</bdi></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold"><bdi dir="ltr">I</bdi> (فیبرینوژن)</td>
+                                <td>↑</td>
+                                <td>↑</td>
+                                <td>↑</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold"><bdi dir="ltr">II</bdi> (پروترومبین)</td>
+                                <td>↑</td>
+                                <td>↑</td>
+                                <td>↑</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold"><bdi dir="ltr">V</bdi></td>
+                                <td>↑</td>
+                                <td>↑</td>
+                                <td>طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold"><bdi dir="ltr">VII</bdi></td>
+                                <td>↑</td>
+                                <td>طبیعی</td>
+                                <td>طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold"><bdi dir="ltr">VIII</bdi></td>
+                                <td>طبیعی</td>
+                                <td>↑</td>
+                                <td>طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold"><bdi dir="ltr">IX</bdi></td>
+                                <td>طبیعی</td>
+                                <td>↑</td>
+                                <td>طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold"><bdi dir="ltr">X</bdi></td>
+                                <td>↑</td>
+                                <td>↑</td>
+                                <td>طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold"><bdi dir="ltr">XI</bdi></td>
+                                <td>طبیعی</td>
+                                <td>↑</td>
+                                <td>طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold"><bdi dir="ltr">XII</bdi>, <bdi dir="ltr">PK</bdi>, <bdi dir="ltr">HMWK</bdi></td>
+                                <td>طبیعی</td>
+                                <td>↑</td>
+                                <td>طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold"><bdi dir="ltr">XIII</bdi></td>
+                                <td>طبیعی</td>
+                                <td>طبیعی</td>
+                                <td>طبیعی</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- نکات مهم -->
+                <div class="space-y-3">
+                    <div class="exam-tip p-4 rounded">
+                        <h4 class="font-bold mb-2">نکته ۱۰۰٪ امتحانی</h4>
+                        <p class="text-sm">
+                            <strong>کمبود فاکتور <bdi dir="ltr">XII</bdi>:</strong> موجب طوالنی شدن <bdi dir="ltr">PTT</bdi> می‌شود ولی خونریزی نمی‌دهد!
+                        </p>
+                        <p class="text-xs mt-2">این یک سؤال بسیار پرتکرار در امتحانات است. بیمار با <bdi dir="ltr">PTT</bdi> طوالنی اما بدون سابقه خونریزی معمولاً کمبود فاکتور ۱۲ دارد.</p>
+                    </div>
+
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                        <h4 class="font-bold text-blue-800 mb-2">کمبود فاکتورهای وابسته به ویتامین <bdi dir="ltr">K</bdi></h4>
+                        <p class="text-sm text-blue-900 mb-2">
+                            فاکتورهای <bdi dir="ltr">II</bdi>، <bdi dir="ltr">VII</bdi>، <bdi dir="ltr">IX</bdi>، <bdi dir="ltr">X</bdi> به ویتامین <bdi dir="ltr">K</bdi> وابسته هستند.
+                        </p>
+                        <div class="bg-white p-3 rounded text-sm">
+                            <strong>علل کمبود:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>مصرف وارفارین</li>
+                                <li>بیماری‌های کبدی</li>
+                                <li>سوءتغذیه</li>
+                                <li>سوء جذب روده‌ای</li>
+                                <li>مصرف آنتی‌بیوتیک‌های وسیع‌الطیف (تخریب فلور روده)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 p-4 rounded-lg border border-green-100">
+                        <h4 class="font-bold text-green-800 mb-2">کمبود فاکتور <bdi dir="ltr">XIII</bdi></h4>
+                        <p class="text-sm text-green-900 mb-2">
+                            این فاکتور در تثبیت لخته نقش دارد. کمبود آن با تست‌های معمول انعقادی (<bdi dir="ltr">PT</bdi>، <bdi dir="ltr">PTT</bdi>، <bdi dir="ltr">TT</bdi>) قابل تشخیص نیست.
+                        </p>
+                        <div class="bg-white p-3 rounded text-sm">
+                            <strong>تظاهرات:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>خونریزی تأخیری (چند ساعت تا چند روز بعد از ترومی)</li>
+                                <li>خونریزی از بند ناف در نوزادان</li>
+                                <li>سقط مکرر</li>
+                                <li>بدترابیب زخم</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mixing Test -->
+                <div class="highlight-box">
+                    <h3 class="font-bold mb-2">
+                        <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        <bdi dir="ltr">Mixing Test</bdi> (۱۰۰٪ امتحانی)
+                    </h3>
+                    <p class="text-sm mb-2">
+                        اگر <bdi dir="ltr">PT</bdi> یا <bdi dir="ltr">PTT</bdi> طوالنی شده باشند، پلاسمای بیمار باید با پلاسمای طبیعی مخلوط شود. این آزمون برای تفکیک کمبود فاکتور از وجود مهارکننده استفاده می‌شود.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong class="text-green-700">نتیجه مثبت:</strong>
+                            <p class="text-xs mt-1">اگر <bdi dir="ltr">PT</bdi> و <bdi dir="ltr">PTT</bdi> در آزمون مجدد طبیعی شوند → <strong>کمبود فاکتورهای انعقادی</strong> مطرح است</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong class="text-red-700">نتیجه منفی:</strong>
+                            <p class="text-xs mt-1">اگر <bdi dir="ltr">PT</bdi> یا <bdi dir="ltr">PTT</bdi> اصلاح نشود (بالا بماند) → <strong>مهارکننده در گردش خون</strong> وجود دارد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 11: فون ویلبراند اکتسابی -->
+        <section id="acquired-vwd" class="card p-6 border-t-4 border-emerald-500">
+            <h2 class="section-title text-xl text-emerald-700">۱۱. فون ویلبراند اکتسابی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="bg-emerald-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-emerald-800 mb-2">تعریف</h3>
+                    <p class="text-sm text-emerald-900">
+                        فون ویلبراند اکتسابی شبیه به نوع ۲<bdi dir="ltr">A</bdi> بوده ولی مولتی‌مرهای بزرگ <bdi dir="ltr">VWF</bdi> را ندارد.
+                    </p>
+                </div>
+
+                <!-- اتیولوژی -->
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                    <h3 class="font-bold text-blue-800 mb-2">بیماری‌های موجب فون ویلبراند اکتسابی</h3>
+                    <div class="grid md:grid-cols-2 gap-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <ul class="text-xs space-y-1 list-disc list-inside">
+                                <li>ترومبوسیتمی اساسی</li>
+                                <li>گاموپاتی‌های منوکلونال</li>
+                                <li>میلوم مولتیپل</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <ul class="text-xs space-y-1 list-disc list-inside">
+                                <li>اختلالات لنفوپرولیفراتیو</li>
+                                <li>بدخیمی‌ها</li>
+                                <li>تنگی شدید دریچه آئورت (سندرم <bdi dir="ltr">Heyde</bdi>)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space-y-2 mt-3">
+                        <div class="bg-yellow-100 p-2 rounded text-xs">
+                            <strong>توجه:</strong> در برخی از بیماران هیچ علتی برای بیماران یافت نمی‌شود.
+                        </div>
+                        <div class="exam-tip p-2 rounded text-xs">
+                            <strong>توجه:</strong> برخالف <bdi dir="ltr">ITP</bdi>، حاملگی هیچ نقشی در فون ویلبراند اکتسابی ندارد.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- تظاهرات و درمان -->
+                <div class="space-y-3">
+                    <div class="bg-white p-4 rounded-lg border border-gray-200">
+                        <h3 class="font-bold text-gray-800 mb-2">تظاهرات بالینی</h3>
+                        <p class="text-sm">
+                            این بیماران سابقه‌ای از خونریزی ندارند؛ ولی بعد از ابتال به بیماری‌های فوق‌الذکر دچار فون ویلبراند اکتسابی شبیه به نوع ۲<bdi dir="ltr">A</bdi> می‌شوند.
+                        </p>
+                    </div>
+
+                    <div class="treatment-box">
+                        <h3 class="font-bold text-green-800 mb-2">درمان</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-white p-3 rounded">
+                                <strong>۱. اصلاح بیماری زمینه‌ای:</strong>
+                                <p class="text-xs mt-1">مهم‌ترین اقدام درمانی است</p>
+                            </div>
+                            <div class="bg-white p-3 rounded">
+                                <strong>۲. <bdi dir="ltr">IVIG</bdi>:</strong>
+                                <p class="text-xs mt-1">می‌تواند در کنترل خونریزی کمک‌کننده باشد</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 12: Follow Up -->
+        <section class="card p-6 bg-gray-800 text-white">
+            <h2 class="text-xl font-bold mb-4 text-yellow-400">نکات کلیدی <bdi dir="ltr">Follow Up</bdi></h2>
+            
+            <div class="space-y-3 text-sm">
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱. <bdi dir="ltr">PT</bdi>:</strong> برای اختلالات فاکتورهای انعقادی وابسته به ویتامین <bdi dir="ltr">K</bdi> بسیار حساس است. مقدار طبیعی آن ۱۱ تا ۱۲.۵ ثانیه است.
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۲. <bdi dir="ltr">PTT</bdi>:</strong> کمبود فاکتورهای <bdi dir="ltr">VIII</bdi>، <bdi dir="ltr">IX</bdi> و <bdi dir="ltr">XI</bdi> را مورد ارزیابی قرار می‌دهد. مقدار طبیعی آن ۳۰ تا ۴۰ ثانیه می‌باشد.
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۳. اختلالات فاکتورهای <bdi dir="ltr">I</bdi>، <bdi dir="ltr">II</bdi>، <bdi dir="ltr">V</bdi>، <bdi dir="ltr">X</bdi>:</strong> منجر به افزایش همزمان <bdi dir="ltr">PT</bdi> و <bdi dir="ltr">PTT</bdi> می‌شود.
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۴. زمان ترومبین (<bdi dir="ltr">TT</bdi>):</strong> سطح عملکردی فیبرینوژن را ارزیابی می‌نماید.
+                </div>
+
+                <div class="exam-tip p-3 rounded">
+                    <strong>۵. <bdi dir="ltr">Mixing test</bdi> (۱۰۰٪ امتحانی):</strong>
+                    <p class="mt-1 text-xs">اگر <bdi dir="ltr">PT</bdi> یا <bdi dir="ltr">PTT</bdi> طوالنی شده باشند، پلاسمای بیمار باید با پلاسمای طبیعی مخلوط شود. سپس مجدداً <bdi dir="ltr">PT</bdi> و <bdi dir="ltr">PTT</bdi> ارزیابی می‌شود:</p>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>اگر <bdi dir="ltr">PT</bdi> و <bdi dir="ltr">PTT</bdi> در آزمون مجدد طبیعی شوند → کمبود فاکتورهای انعقادی مطرح می‌گردد</li>
+                        <li>اگر <bdi dir="ltr">PT</bdi> یا <bdi dir="ltr">PTT</bdi> اصلاح نشود (بالا بماند) → یک نوع مهارکننده در گردش خون وجود دارد</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۶. ترومبوسیتوپنی خفیف (۵۰,۰۰۰-۱۵۰,۰۰۰):</strong> معمولاً موجب خونریزی نمی‌شود و نیازی به درمان ندارد؛ اما باید علت زمینه‌ای آن بررسی شود.
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۷. تظاهرات <bdi dir="ltr">ITP</bdi>:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>پتشی و خونریزی جلدی-مخاطی شایع‌ترین علائم هستند</li>
+                        <li>ترومبوسیتوپنی ایزوله (تعداد پالکت کمتر از ۱۰,۰۰۰) در حالی که هماتوکریت و تعداد گلبول‌های سفید طبیعی هستند</li>
+                        <li>اسپلنومگالی و لنفادنوپاتی ندارند</li>
+                        <li>تشخیص <bdi dir="ltr">ITP</bdi> بالینی بوده ولی اولین اقدام آزمایشگاهی برای آن بررسی الم خون محیطی است</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۸. درمان <bdi dir="ltr">ITP</bdi>:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>خط اول: کورتیکواستروئیدها (دگزامتازون یا پردنیزون) و <bdi dir="ltr">IVIG</bdi></li>
+                        <li>خط دوم: اسپلنکتومی، ریتوکسیماب، آگونیست‌های ترومبوپویتین</li>
+                        <li>روگام فقط در بیماران <bdi dir="ltr">Rh+</bdi> که طحال دارند و آنمی همولیتیک همزمان ندارند</li>
+                        <li>تزریق پالکت در صورت خونریزی فعال</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۹. <bdi dir="ltr">TTP</bdi>:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>پنتاد کلاسیک: ترومبوسیتوپنی + آنمی همولیتیک میکروآنژیوپاتیک + علائم نورولوژیک + نارسایی کلیه + تب</li>
+                        <li>سنگ‌بنای درمان: پالسمافرز فوری</li>
+                        <li><bdi dir="ltr">PT</bdi> و <bdi dir="ltr">PTT</bdi> طبیعی (تمایز با <bdi dir="ltr">DIC</bdi>)</li>
+                        <li>تزریق پالکت در <bdi dir="ltr">TTP</bdi> ممنوع است</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۰. <bdi dir="ltr">DIC</bdi>:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>مهم‌ترین اقدام: درمان بیماری زمینه‌ای</li>
+                        <li>درمان کمکی: پالکت + <bdi dir="ltr">FFP</bdi> + کرایوپرسیپیتات (اگر فیبرینوژن < ۱۰۰)</li>
+                        <li>یافته‌های آزمایشگاهی: ↑<bdi dir="ltr">PT</bdi> + ↑<bdi dir="ltr">PTT</bdi> + ↓فیبرینوژن + ↑<bdi dir="ltr">D-dimer</bdi> + شیستوسیت</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۱. سندرم <bdi dir="ltr">HELLP</bdi>:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>همولیز + افزایش آنزیم‌های کبدی + تعداد پایین پالکت</li>
+                        <li>مهم‌ترین درمان: ختم حاملگی</li>
+                        <li>اگر بعد از زایمان بهبود نیابد: <bdi dir="ltr">IVIG</bdi> یا پالسمافرز</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۲. بیماری فون ویلبراند:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>نوع ۱ (شایع‌ترین): کاهش مقدار <bdi dir="ltr">VWF</bdi>، درمان با <bdi dir="ltr">DDAVP</bdi></li>
+                        <li>نوع ۲<bdi dir="ltr">B</bdi>: <bdi dir="ltr">DDAVP</bdi> کنتراندیکه است</li>
+                        <li>نوع ۲<bdi dir="ltr">N</bdi>: شبیه هموفیلی <bdi dir="ltr">A</bdi> در زنان</li>
+                        <li>نوع ۳: شدیدترین نوع، <bdi dir="ltr">DDAVP</bdi> بی‌اثر</li>
+                        <li>منوراژی یکی از تظاهرات شایع است (۱۰۰٪ امتحانی)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۳. هموفیلی:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>هموفیلی <bdi dir="ltr">A</bdi>: کمبود فاکتور <bdi dir="ltr">VIII</bdi></li>
+                        <li>هموفیلی <bdi dir="ltr">B</bdi>: کمبود فاکتور <bdi dir="ltr">IX</bdi></li>
+                        <li>توارث: وابسته به <bdi dir="ltr">X</bdi> مغلوب (مردان مبتلا، زنان ناقل)</li>
+                        <li>تظاهرات: همارتروز (شایع‌ترین)، هماتوم عضلانی، خونریزی <bdi dir="ltr">CNS</bdi></li>
+                        <li><bdi dir="ltr">PTT</bdi> طوالنی، <bdi dir="ltr">PT</bdi> طبیعی، <bdi dir="ltr">BT</bdi> طبیعی</li>
+                    </ul>
+                </div>
+
+                <div class="exam-tip p-3 rounded">
+                    <strong>۱۴. کمبود فاکتور ۱۲ (۱۰۰٪ امتحانی):</strong>
+                    <p class="text-xs mt-1">
+                        موجب طوالنی شدن <bdi dir="ltr">PTT</bdi> می‌شود ولی خونریزی نمی‌دهد! این یک سؤال بسیار پرتکرار در امتحانات است.
+                    </p>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۵. داروهای ضدپالکتی:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>آسپیرین: مهار برگشت‌ناپذیر پالکت</li>
+                        <li><bdi dir="ltr">NSAID</bdi>: مهار برگشت‌پذیر</li>
+                        <li>درمان خونریزی: قطع دارو + <bdi dir="ltr">DDAVP</bdi> + تزریق پالکت</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۶. اختلال عملکرد پالکت در اورمی:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>درمان کوتاه‌مدت: <bdi dir="ltr">DDAVP</bdi> + کرایوپرسیپیتات</li>
+                        <li>درمان طوالنی‌مدت: استروژن کنژوگه</li>
+                        <li>تزریق پالکت نباید به عنوان خط اول در نظر گرفته شود</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۷. نکات مهم تشخیص افتراقی:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li><bdi dir="ltr">ITP</bdi> vs <bdi dir="ltr">TTP</bdi>: در <bdi dir="ltr">ITP</bdi> فقط پالکت پایین، در <bdi dir="ltr">TTP</bdi> همولیز و علائم نورو هم هست</li>
+                        <li><bdi dir="ltr">TTP</bdi> vs <bdi dir="ltr">DIC</bdi>: در <bdi dir="ltr">TTP</bdi> تست‌های انعقادی (<bdi dir="ltr">PT/PTT</bdi>) طبیعی، در <bdi dir="ltr">DIC</bdi> طوالنی</li>
+                        <li>هموفیلی vs فون ویلبراند: در هموفیلی <bdi dir="ltr">BT</bdi> طبیعی و توارث <bdi dir="ltr">X-linked</bdi>، در فون ویلبراند <bdi dir="ltr">BT</bdi> طوالنی و توارث اتوزومال</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۸. نکات درمانی مهم:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li><bdi dir="ltr">DDAVP</bdi> در فون ویلبراند نوع ۱ و هموفیلی <bdi dir="ltr">A</bdi> خفیف مؤثر است</li>
+                        <li><bdi dir="ltr">DDAVP</bdi> در نوع ۲<bdi dir="ltr">B</bdi> و نوع ۳ کنتراندیکه یا بی‌اثر است</li>
+                        <li>پالسمافرز در <bdi dir="ltr">TTP</bdi> ضروری و نجات‌دهنده است</li>
+                        <li>تزریق پالکت در <bdi dir="ltr">TTP</bdi> ممنوع، در <bdi dir="ltr">ITP</bdi> فقط در صورت خونریزی فعال</li>
+                        <li>روگام فقط در <bdi dir="ltr">Rh+</bdi> که طحال دارند استفاده می‌شود</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center text-gray-400 text-xs py-8">
+        تهیه شده جهت مرور سریع امتحانات دستیاری و پره انترنی
+        <br>
+        فصل ۱۲ هماتولوژی: بیماری‌های هموستاتیک و خونریزی‌دهنده (صفحات ۲۰۳-۲۲۸)
+        <br>
+        شامل ۱۱ بخش اصلی و بیش از ۱۰۰ نکته امتحانی کلیدی
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Active state for navbar
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                links.forEach(l => l.classList.remove('bg-red-100', 'text-red-900'));
+                this.classList.add('bg-red-100', 'text-red-900');
+            });
+        });
+    </script>
+</body>
+</html>
